@@ -1,0 +1,14 @@
+name: Intregar continuamente com Docker
+
+on: [push]
+
+jobs:
+  integracao:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v6
+
+      - run: |
+          docker build -t minhaimagem:v1 .
+    

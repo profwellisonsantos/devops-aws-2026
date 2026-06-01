@@ -3,7 +3,7 @@ name: Meu Primeiro Workflow
 
 # Vamos definir o meu Event
 
-on: [push]
+on: [pull_request]
 
 jobs:
   hello-world:
