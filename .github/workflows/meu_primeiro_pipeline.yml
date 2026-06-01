@@ -1,0 +1,14 @@
+# Qual o nome do meu pipeline?
+name: Meu Primeiro Workflow
+
+# Vamos definir o meu Event
+
+on: [push]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Imprimir uma mensagem de olá mundo!'
+        run: echo "Olá, turma! O Github Actions está funcionando!" 
