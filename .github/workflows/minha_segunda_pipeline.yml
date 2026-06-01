@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: '3.13' 
 
-        run: |
+      - run: |
           pip install --upgrade pip # Aqui estou atualizando o atualizador de pacotes
           pip install -r requirements.txt # Instalando as biblioteas
           python3 app.py # Executando a aplicação
