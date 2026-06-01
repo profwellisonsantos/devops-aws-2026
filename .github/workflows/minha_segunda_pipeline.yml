@@ -9,12 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Configurar o Python
       - uses: actions/setup-python@v6
         with:
           python-version: '3.13' 
 
-      - name: Instalar as depedências da aplicação
         run: |
           pip install --upgrade pip # Aqui estou atualizando o atualizador de pacotes
           pip install -r requirements.txt # Instalando as biblioteas
