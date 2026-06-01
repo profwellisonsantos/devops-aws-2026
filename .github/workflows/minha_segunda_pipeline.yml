@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout do Código
       - uses: actions/checkout@v6
 
       - name: Configurar o Python
