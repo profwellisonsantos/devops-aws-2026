@@ -24,6 +24,7 @@ jobs:
           tags: wellisonraul/eletivadevops
       
   entrega:
+    needs: integracao
     runs-on: prod
     
     steps: 
