@@ -10,7 +10,7 @@ def hello():
     return f'Olá! Esta página foi vista {count} vezes.'
 
 @app.route('/bemvindo')
-def hello():
+def bemvindo():
     count = cache.incr('hits')
     return f'Olá! Esta página foi vista {count} vezes.'
 
