@@ -39,6 +39,6 @@ jobs:
         name: Pull e provisionar
         run: |
           docker pull wellisonraul/eletivadevops
-          docker run -d wellisonraul/eletivadevops
+          docker run -d -p 5000:5000 wellisonraul/eletivadevops
 
     
