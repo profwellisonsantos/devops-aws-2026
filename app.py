@@ -14,5 +14,11 @@ def bemvindo():
     count = cache.incr('hits')
     return f'Olá! Esta página foi vista {count} vezes.'
 
+@app.route('/adduser')
+def adduser():
+    count = cache.incr('hits')
+    return f'Olá! Esta página foi vista {count} vezes.'
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)

@@ -21,7 +21,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: wellisonraul/eletivadevops
+          tags: wellisonraul/eletivadevops:${{ github.run_id }}
       
   entrega:
     needs: integracao
@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       -
-        name: Pull e provisionar
+        name: Provisionando o servico
         run: |
           docker compose up -d 
     

@@ -1,7 +1,7 @@
 ---
 services:
   web:
-    image: "wellisonraul/eletivadevops"
+    image: "wellisonraul/${{ github.run_id }}"
     ports: 
       - "5000:5000"
     depends_on:
