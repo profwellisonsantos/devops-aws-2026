@@ -40,5 +40,5 @@ jobs:
       -
         name: Provisionando o servico
         run: |
-          docker compose up -d 
+           ID_ACTIONS=${{ github.run_id }} docker compose up -d 
     

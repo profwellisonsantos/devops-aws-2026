@@ -1,7 +1,7 @@
 ---
 services:
   web:
-    image: "wellisonraul/${{ github.run_id }}"
+    image: "wellisonraul/${ID_ACTIONS}"
     ports: 
       - "5000:5000"
     depends_on:
